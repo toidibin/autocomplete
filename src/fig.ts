@@ -203,6 +203,25 @@ const completionSpec: Fig.Spec = {
     { name: "quit", description: "Quit the Fig application" },
 
     {
+      name: "login",
+      description: "Login to Fig",
+    },
+    {
+      name: "logout",
+      description: "Logout of Fig",
+    },
+    {
+      name: "user",
+      description: "Manage your Fig user account",
+      subcommands: [
+        {
+          name: "whoami",
+          description: "Prints details about the current logged in user",
+        },
+      ],
+    },
+
+    {
       name: "team:upload",
       description: "Share an completion spec with your team",
       args: {
